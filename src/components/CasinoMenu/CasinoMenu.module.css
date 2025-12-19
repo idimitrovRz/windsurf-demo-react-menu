@@ -1,0 +1,35 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--casino-space-md);
+  padding: var(--casino-space-lg);
+  border-bottom: 1px solid var(--casino-color-gold-500);
+}
+
+.title {
+  font-size: var(--casino-font-size-lg);
+  font-weight: var(--casino-font-weight-semibold);
+  letter-spacing: 0.03em;
+}
+
+.closeButton {
+  appearance: none;
+  background: transparent;
+  border: 1px solid var(--casino-color-gold-500);
+  border-radius: var(--casino-radius-md);
+  color: var(--casino-color-text-100);
+  padding: var(--casino-space-xs) var(--casino-space-md);
+  cursor: pointer;
+}
+
+.closeButton:focus-visible {
+  outline: 2px solid var(--casino-color-gold-500);
+  outline-offset: 2px;
+}

@@ -1,0 +1,77 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: var(--casino-space-sm);
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--casino-space-md);
+}
+
+.monthLabel {
+  font-size: var(--casino-font-size-md);
+  font-weight: var(--casino-font-weight-semibold);
+}
+
+.hint {
+  font-size: var(--casino-font-size-xs);
+  opacity: 0.7;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: var(--casino-space-xs);
+}
+
+.weekday {
+  text-align: center;
+  font-size: var(--casino-font-size-xs);
+  opacity: 0.8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: var(--casino-space-xs);
+}
+
+.day {
+  appearance: none;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: var(--casino-radius-sm);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--casino-color-text-100);
+  padding: var(--casino-space-xs);
+  cursor: pointer;
+}
+
+.dayMuted {
+  appearance: none;
+  border: 1px solid rgba(255, 215, 0, 0.12);
+  border-radius: var(--casino-radius-sm);
+  background: rgba(255, 255, 255, 0.02);
+  color: rgba(255, 255, 255, 0.55);
+  padding: var(--casino-space-xs);
+  cursor: pointer;
+}
+
+.daySelected {
+  appearance: none;
+  border: 1px solid var(--casino-color-gold-500);
+  border-radius: var(--casino-radius-sm);
+  background: rgba(0, 200, 120, 0.55);
+  color: var(--casino-color-text-100);
+  padding: var(--casino-space-xs);
+  cursor: pointer;
+}
+
+.day:focus-visible,
+.dayMuted:focus-visible,
+.daySelected:focus-visible {
+  outline: 2px solid var(--casino-color-gold-500);
+  outline-offset: 2px;
+}

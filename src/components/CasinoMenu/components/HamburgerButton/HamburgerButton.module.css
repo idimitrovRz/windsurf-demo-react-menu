@@ -1,0 +1,38 @@
+.button {
+  width: var(--casino-hamburger-size);
+  height: var(--casino-hamburger-size);
+  display: grid;
+  place-content: center;
+  gap: var(--casino-hamburger-gap);
+  border-radius: var(--casino-radius-md);
+  border: 1px solid rgba(255, 215, 0, 0.55);
+  background: rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  padding: 0;
+}
+
+.buttonOpen {
+  width: var(--casino-hamburger-size);
+  height: var(--casino-hamburger-size);
+  display: grid;
+  place-content: center;
+  gap: var(--casino-hamburger-gap);
+  border-radius: var(--casino-radius-md);
+  border: 1px solid var(--casino-color-gold-500);
+  background: rgba(255, 215, 0, 0.14);
+  cursor: pointer;
+  padding: 0;
+}
+
+.button:focus-visible,
+.buttonOpen:focus-visible {
+  outline: 2px solid var(--casino-color-gold-500);
+  outline-offset: 2px;
+}
+
+.bar {
+  width: var(--casino-hamburger-bar-width);
+  height: var(--casino-hamburger-bar-height);
+  border-radius: 999px;
+  background: var(--casino-color-gold-500);
+}

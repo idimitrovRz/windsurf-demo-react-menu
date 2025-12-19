@@ -40,3 +40,41 @@
 .read-the-docs {
   color: #888;
 }
+
+.appRoot {
+  width: 100%;
+}
+
+.demoCard {
+  width: min(720px, 92vw);
+  margin: 0 auto;
+  padding: 1.25rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 215, 0, 0.28);
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.demoHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.demoTitle {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.demoRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.demoRow select {
+  padding: 6px 10px;
+}

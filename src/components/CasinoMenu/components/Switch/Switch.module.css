@@ -1,0 +1,72 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--casino-space-md);
+  padding: var(--casino-space-sm) 0;
+}
+
+.label {
+  font-size: var(--casino-font-size-md);
+}
+
+.switchBase {
+  position: relative;
+  width: var(--casino-switch-width);
+  height: var(--casino-switch-height);
+  border-radius: var(--casino-switch-height);
+  border: 1px solid var(--casino-color-gold-500);
+  background: rgba(255, 255, 255, 0.04);
+  cursor: pointer;
+  padding: 0;
+}
+
+.switchOff {
+  position: relative;
+  width: var(--casino-switch-width);
+  height: var(--casino-switch-height);
+  border-radius: var(--casino-switch-height);
+  border: 1px solid var(--casino-color-gold-500);
+  background: rgba(255, 255, 255, 0.04);
+  cursor: pointer;
+  padding: 0;
+}
+
+.switchOn {
+  position: relative;
+  width: var(--casino-switch-width);
+  height: var(--casino-switch-height);
+  border-radius: var(--casino-switch-height);
+  border: 1px solid var(--casino-color-gold-500);
+  background: var(--casino-color-green-500);
+  cursor: pointer;
+  padding: 0;
+}
+
+.switchOff:focus-visible,
+.switchOn:focus-visible {
+  outline: 2px solid var(--casino-color-gold-500);
+  outline-offset: 2px;
+}
+
+.thumb {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: var(--casino-switch-thumb-padding);
+  width: var(--casino-switch-thumb-size);
+  height: var(--casino-switch-thumb-size);
+  border-radius: 999px;
+  background: var(--casino-color-gold-500);
+  transition: transform var(--casino-motion-duration-sm) var(--casino-motion-ease-out);
+}
+
+.switchOn .thumb {
+  transform: translateY(-50%) translateX(var(--casino-switch-thumb-translate));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .thumb {
+    transition: none;
+  }
+}

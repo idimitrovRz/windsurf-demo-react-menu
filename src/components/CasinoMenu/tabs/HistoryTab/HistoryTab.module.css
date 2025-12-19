@@ -1,0 +1,38 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: var(--casino-space-md);
+}
+
+.segmentWrapper {
+  margin-top: var(--casino-space-sm);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--casino-space-sm);
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--casino-space-md);
+  border: 1px solid rgba(255, 215, 0, 0.25);
+  border-radius: var(--casino-radius-md);
+  background: rgba(255, 255, 255, 0.03);
+  padding: var(--casino-space-sm) var(--casino-space-md);
+}
+
+.itemTitle {
+  opacity: 0.9;
+}
+
+.itemDelta {
+  color: var(--casino-color-gold-500);
+  font-variant-numeric: tabular-nums;
+}
+
+.empty {
+  opacity: 0.7;
+}

@@ -3,6 +3,45 @@
   line-height: 1.5;
   font-weight: 400;
 
+  --casino-color-bg-900: #0b0b0f;
+  --casino-color-text-100: rgba(255, 255, 255, 0.92);
+  --casino-color-gold-500: #ffd24a;
+  --casino-color-green-500: #00c878;
+
+  --casino-radius-sm: 8px;
+  --casino-radius-md: 12px;
+  --casino-radius-lg: 16px;
+
+  --casino-space-xs: 6px;
+  --casino-space-sm: 10px;
+  --casino-space-md: 14px;
+  --casino-space-lg: 18px;
+  --casino-space-xl: 24px;
+
+  --casino-font-size-xs: 12px;
+  --casino-font-size-sm: 13px;
+  --casino-font-size-md: 15px;
+  --casino-font-size-lg: 18px;
+  --casino-font-weight-semibold: 600;
+
+  --casino-motion-duration-sm: 140ms;
+  --casino-motion-duration-md: 220ms;
+  --casino-motion-ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  --casino-switch-width: 52px;
+  --casino-switch-height: 28px;
+  --casino-switch-thumb-size: 22px;
+  --casino-switch-thumb-padding: 3px;
+  --casino-switch-thumb-translate: 24px;
+
+  --casino-slider-track-height: 12px;
+  --casino-slider-thumb-size: 18px;
+
+  --casino-hamburger-size: 44px;
+  --casino-hamburger-gap: 6px;
+  --casino-hamburger-bar-width: 20px;
+  --casino-hamburger-bar-height: 2px;
+
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;

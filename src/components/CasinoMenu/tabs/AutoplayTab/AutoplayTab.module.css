@@ -1,0 +1,12 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: var(--casino-space-md);
+}
+
+.stopLabel {
+  font-size: var(--casino-font-size-md);
+  font-weight: var(--casino-font-weight-semibold);
+  letter-spacing: 0.08em;
+  color: var(--casino-color-gold-500);
+}

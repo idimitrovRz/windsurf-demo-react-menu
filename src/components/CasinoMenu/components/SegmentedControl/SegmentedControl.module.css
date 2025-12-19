@@ -1,0 +1,30 @@
+.root {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border: 1px solid rgba(255, 215, 0, 0.35);
+  border-radius: var(--casino-radius-md);
+  overflow: hidden;
+}
+
+.option {
+  appearance: none;
+  background: rgba(255, 255, 255, 0.04);
+  border: none;
+  color: var(--casino-color-text-100);
+  padding: var(--casino-space-sm);
+  cursor: pointer;
+}
+
+.optionActive {
+  appearance: none;
+  background: rgba(255, 215, 0, 0.18);
+  border: none;
+  color: var(--casino-color-text-100);
+  padding: var(--casino-space-sm);
+  cursor: pointer;
+}
+
+.option:focus-visible {
+  outline: 2px solid var(--casino-color-gold-500);
+  outline-offset: -2px;
+}
